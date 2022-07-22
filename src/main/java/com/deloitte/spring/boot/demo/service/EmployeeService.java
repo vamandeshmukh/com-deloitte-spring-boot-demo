@@ -1,7 +1,10 @@
 package com.deloitte.spring.boot.demo.service;
 
+import org.springframework.stereotype.Service;
+
 import com.deloitte.spring.boot.demo.model.Employee;
 
+@Service
 public class EmployeeService {
 
 	public Employee getEmp() {
