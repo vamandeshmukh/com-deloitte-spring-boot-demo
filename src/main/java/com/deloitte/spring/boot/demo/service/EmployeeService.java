@@ -17,18 +17,26 @@ public class EmployeeService {
 	@Autowired
 	EmployeeRepository empRepository;
 
-	public Employee getEmployeeById() {
-		System.out.println("service getEmployeeById");
+	public List<Employee> getAllEmployees() {
+		return empRepository.findAll();
+	}
 
-		Optional<Employee> empOptional = empRepository.findById(101);
+	public Employee getEmployeeById(int employeeId) {
+		System.out.println("service getEmployeeById");
+		Optional<Employee> empOptional = empRepository.findById(employeeId);
 		Employee emp = empOptional.get();
 		return emp;
 	}
 
-	public List<Employee> getAllEmployees() {
-
-		return empRepository.findAll();
-
+	public Employee addEmployee() {
+		return null;
 	}
 
+	public Employee updateEmployee() {
+		return null;
+	}
+
+	public Employee deleteEmployee() {
+		return null;
+	}
 }
