@@ -50,7 +50,7 @@ public class EmployeeController {
 	}
 
 	@RequestMapping(path = "/delete-emp/{eid}", method = RequestMethod.DELETE)
-	public Employee deleteEmp(@PathVariable int employeeId) {
+	public Employee deleteEmp(@PathVariable(name = "eid") int employeeId) {
 		return empService.deleteEmployee(employeeId);
 	}
 
