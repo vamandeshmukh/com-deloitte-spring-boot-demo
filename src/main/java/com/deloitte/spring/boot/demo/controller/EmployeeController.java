@@ -16,12 +16,12 @@ import com.deloitte.spring.boot.demo.service.EmployeeService;
 @RestController
 public class EmployeeController {
 
-//	HTTP Requests - 
+//	HTTP Requests and Spring annotations - 
 //	@RequestMapping
-//	@PostMapping
-//	@PutMapping
-//	@DeleteMapping
-//	@GetMapping
+//	GET - @GetMapping
+//	POST - @PostMapping
+//	PUT - @PutMapping
+//	DELETE - @DeleteMapping
 
 	@Autowired
 	EmployeeService empService;
@@ -44,13 +44,13 @@ public class EmployeeController {
 		return empService.addEmployee(employee);
 	}
 
-	@RequestMapping(path = "/add-emp", method = RequestMethod.PUT)
-	public Employee updateEmp(Employee employee) {
+	@RequestMapping(path = "/update-emp", method = RequestMethod.PUT)
+	public Employee updateEmp(@RequestBody Employee employee) {
 		return empService.updateEmployee(employee);
 	}
 
-	@RequestMapping(path = "/delete-emp", method = RequestMethod.DELETE)
-	public Employee deleteEmp(int employeeId) {
+	@RequestMapping(path = "/delete-emp/{eid}", method = RequestMethod.DELETE)
+	public Employee deleteEmp(@PathVariable int employeeId) {
 		return empService.deleteEmployee(employeeId);
 	}
 
