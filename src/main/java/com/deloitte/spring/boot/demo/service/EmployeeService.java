@@ -31,7 +31,7 @@ public class EmployeeService {
 	}
 
 	public Employee getEmployeeById(int employeeId) {
-		LOG.info("getEmployeeById");
+		LOG.info(Integer.toString(employeeId));
 		Optional<Employee> empOptional = empRepository.findById(employeeId);
 		if (empOptional.isPresent())
 			return empOptional.get();
@@ -45,6 +45,7 @@ public class EmployeeService {
 	}
 
 	public Employee updateEmployee(Employee employee) {
+		LOG.info(employee.toString());
 		if (empRepository.existsById(employee.getEmployeeId()))
 			return empRepository.save(employee);
 		else
@@ -52,6 +53,7 @@ public class EmployeeService {
 	}
 
 	public Employee deleteEmployee(int employeeId) {
+		LOG.info(Integer.toString(employeeId));
 		Employee emp = this.getEmployeeById(employeeId);
 		if (null != emp)
 			empRepository.deleteById(employeeId);
