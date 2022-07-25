@@ -18,6 +18,7 @@ public class EmployeeService {
 	EmployeeRepository empRepository;
 
 	public Employee getEmployeeById() {
+		System.out.println("service getEmployeeById");
 
 		Optional<Employee> empOptional = empRepository.findById(101);
 		Employee emp = empOptional.get();
