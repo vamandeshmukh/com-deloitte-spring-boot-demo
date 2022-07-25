@@ -11,6 +11,12 @@ import com.deloitte.spring.boot.demo.reository.EmployeeRepository;
 
 @Service
 public class EmployeeService {
+	
+//	scenarios - 
+//	user tries to get non-existing record (employeeId)
+//	user tries to add duplicate record (employeeId)
+//	user tries to update non-existing record (employeeId)
+//	user tries to delete non-existing record (employeeId)
 
 	@Autowired
 	EmployeeRepository empRepository;
