@@ -1,6 +1,8 @@
 package com.deloitte.spring.boot.demo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -8,9 +10,14 @@ import javax.persistence.Table;
 @Table(name = "emp_table")
 public class Employee {
 
-	@Id
+	@Id // PK
+	@Column(name = "employee_id")
 	private int employeeId;
+
+	@Column(name = "first_name")
 	private String firstName;
+
+	@Column(name = "salary")
 	private double salary;
 
 	public Employee() {
