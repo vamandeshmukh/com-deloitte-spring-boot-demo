@@ -1,7 +1,5 @@
 package com.deloitte.spring.boot.demo.service;
 
-import java.util.ArrayList;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -28,15 +26,16 @@ public class EmployeeService {
 		return emp;
 	}
 
-	public Employee addEmployee() {
-		return null;
+	public Employee addEmployee(Employee employee) {
+		return empRepository.save(employee);
 	}
 
-	public Employee updateEmployee() {
-		return null;
+	public Employee updateEmployee(Employee employee) {
+		return empRepository.save(employee);
 	}
 
-	public Employee deleteEmployee() {
+	public Employee deleteEmployee(int employeeId) {
+		empRepository.deleteById(employeeId);
 		return null;
 	}
 }

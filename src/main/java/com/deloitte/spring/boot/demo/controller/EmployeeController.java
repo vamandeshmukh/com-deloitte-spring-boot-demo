@@ -14,17 +14,6 @@ import com.deloitte.spring.boot.demo.service.EmployeeService;
 @RestController
 public class EmployeeController {
 
-//	EmployeeService empService = new EmployeeService();
-
-	@Autowired
-	EmployeeService empService;
-
-	@GetMapping("/emp")
-	public Employee emp() {
-		System.out.println("controller getEmpById");
-		return empService.getEmployeeById();
-	}
-
 //	HTTP Requests - 
 //	@RequestMapping
 //	@PostMapping
@@ -32,12 +21,35 @@ public class EmployeeController {
 //	@DeleteMapping
 //	@GetMapping
 
+	@Autowired
+	EmployeeService empService;
+
 //	@GetMapping("/get-all-emps")
 	@RequestMapping(path = "/get-all-emps", method = RequestMethod.GET)
-//	@RequestMapping("/get-all-emps") // Don't use this 
 	public List<Employee> getAllEmps() {
-		System.out.println("emp-controller");
+		System.out.println("get-all-emps");
 		return empService.getAllEmployees();
+	}
+
+	@GetMapping("/get-emp-by-id/{eid}")
+	public Employee getEmpById(int employeeId) {
+		System.out.println(employeeId);
+		return empService.getEmployeeById(employeeId);
+	}
+
+	@RequestMapping(path = "/add-emp", method = RequestMethod.POST)
+	public Employee addEmp(Employee employee) {
+		return empService.addEmployee(employee);
+	}
+
+	@RequestMapping(path = "/add-emp", method = RequestMethod.PUT)
+	public Employee updateEmp(Employee employee) {
+		return empService.updateEmployee(employee);
+	}
+
+	@RequestMapping(path = "/delete-emp", method = RequestMethod.DELETE)
+	public Employee deleteEmp(int employeeId) {
+		return empService.deleteEmployee(employeeId);
 	}
 
 }
