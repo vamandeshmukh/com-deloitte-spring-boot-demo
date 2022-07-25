@@ -22,7 +22,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empService;
 
-//	@GetMapping("/emp")
+	@GetMapping("/emp")
 	public Employee emp() {
 		System.out.println("emp-controller");
 		return empService.getEmp();
