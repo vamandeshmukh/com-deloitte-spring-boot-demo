@@ -17,12 +17,6 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	// No need to declare methods for these operations.
 
 	// for other business specific requirements, methods need to be declared here.
+	// https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.core-concepts
 
 }
-
-
-
-
-
-
-

@@ -27,13 +27,7 @@ public class EmployeeService {
 
 	public List<Employee> getAllEmployees() {
 
-		List<Employee> empList = new ArrayList<>();
-
-		empList.add(new Employee(102, "Monu", 909090));
-		empList.add(new Employee(103, "Tonu", 909090));
-		empList.add(new Employee(104, "Ponu", 909090));
-
-		return empList;
+		return empRepository.findAll();
 
 	}
 
