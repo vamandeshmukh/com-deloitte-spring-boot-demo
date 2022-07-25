@@ -1,18 +1,26 @@
 package com.deloitte.spring.boot.demo.service;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.deloitte.spring.boot.demo.model.Employee;
+import com.deloitte.spring.boot.demo.reository.EmployeeRepository;
 
 @Service
 public class EmployeeService {
 
-	public Employee getEmp() {
-		Employee emp = new Employee(101, "Sonu", 90000);
-		System.out.println("emp-service");
+	@Autowired
+	EmployeeRepository empRepository;
+
+	public Employee getEmployeeById() {
+
+		Optional<Employee> empOptional = empRepository.findById(101);
+		Employee emp = empOptional.get();
 		return emp;
 	}
 
