@@ -2,7 +2,8 @@ package com.deloitte.spring.boot.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 public class Employee {
 
 	@Id // PK
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "employee_id")
 	private int employeeId;
 
@@ -22,6 +24,12 @@ public class Employee {
 
 	public Employee() {
 		super();
+	}
+
+	public Employee(String firstName, double salary) {
+		super();
+		this.firstName = firstName;
+		this.salary = salary;
 	}
 
 	public Employee(int employeeId, String firstName, double salary) {
