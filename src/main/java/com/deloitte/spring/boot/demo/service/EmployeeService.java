@@ -39,22 +39,7 @@ public class EmployeeService {
 		}
 	}
 
-	public Employee addEmployee(Employee employee) {
-		LOG.info(employee.toString());
-		return empRepository.save(employee);
-	}
 
-	public Employee updateEmployee(Employee employee) {
-		LOG.info(employee.toString());
-		Employee emp = this.getEmployeeById(employee.getEmployeeId());
-		emp = empRepository.save(employee);
-		return emp;
-	}
-
-	public Employee deleteEmployee(int employeeId) {
-		LOG.info(Integer.toString(employeeId));
-		return this.getEmployeeById(employeeId);
-	}
 }
 
 //package com.deloitte.spring.boot.demo.service;
