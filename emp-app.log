@@ -2053,3 +2053,79 @@ com.deloitte.spring.boot.demo.exception.EmployeeNotFoundException: Employee with
 2022-07-26 15:22:14.343  INFO 19164 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown initiated...
 2022-07-26 15:22:14.347  INFO 19164 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown completed.
 2022-07-26 15:22:14.394  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
+2022-07-26 15:22:14.414  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 19164 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-26 15:22:14.414  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 15:22:14.516  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 15:22:14.519  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-07-26 15:22:14.564  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-26 15:22:14.565  INFO 19164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 15:22:14.565  INFO 19164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-26 15:22:14.577  INFO 19164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 15:22:14.577  INFO 19164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 162 ms
+2022-07-26 15:22:14.595  INFO 19164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 15:22:14.596  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Starting...
+2022-07-26 15:22:14.607  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Start completed.
+2022-07-26 15:22:14.607  INFO 19164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-26 15:22:14.624  INFO 19164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 15:22:14.624  INFO 19164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:22:14.683  WARN 19164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 15:22:14.942  INFO 19164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 15:22:14.948  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-26 15:22:14.950  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 0.552 seconds (JVM running for 13832.077)
+2022-07-26 15:22:14.950  INFO 19164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-26 15:22:14.951  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-26 15:22:37.883  INFO 19164 --- [Thread-175] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:22:37.883  INFO 19164 --- [Thread-175] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Shutdown initiated...
+2022-07-26 15:22:37.886  INFO 19164 --- [Thread-175] com.zaxxer.hikari.HikariDataSource       : HikariPool-44 - Shutdown completed.
+2022-07-26 15:22:37.923  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
+2022-07-26 15:22:37.938  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 19164 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-26 15:22:37.938  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 15:22:38.012  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 15:22:38.014  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2022-07-26 15:22:38.048  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-26 15:22:38.048  INFO 19164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 15:22:38.048  INFO 19164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-26 15:22:38.059  INFO 19164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 15:22:38.059  INFO 19164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2022-07-26 15:22:38.073  INFO 19164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 15:22:38.075  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Starting...
+2022-07-26 15:22:38.084  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Start completed.
+2022-07-26 15:22:38.084  INFO 19164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-26 15:22:38.095  INFO 19164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 15:22:38.095  INFO 19164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:22:38.131  WARN 19164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 15:22:38.370  INFO 19164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 15:22:38.377  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-26 15:22:38.379  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 0.453 seconds (JVM running for 13855.505)
+2022-07-26 15:22:38.379  INFO 19164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-26 15:22:38.379  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-26 16:10:16.082  WARN 19164 --- [HikariPool-45 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-45 - Thread starvation or clock leap detected (housekeeper delta=14m7s392ms764µs).
+2022-07-26 17:02:59.418  INFO 19164 --- [Thread-179] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 17:02:59.428  INFO 19164 --- [Thread-179] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown initiated...
+2022-07-26 17:02:59.440  INFO 19164 --- [Thread-179] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown completed.
+2022-07-26 17:02:59.546  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
+2022-07-26 17:02:59.583  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 19164 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-26 17:02:59.583  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 17:02:59.715  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 17:02:59.720  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-07-26 17:02:59.783  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-26 17:02:59.784  INFO 19164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 17:02:59.784  INFO 19164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-26 17:02:59.798  INFO 19164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 17:02:59.799  INFO 19164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2022-07-26 17:02:59.825  INFO 19164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 17:02:59.828  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Starting...
+2022-07-26 17:02:59.846  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Start completed.
+2022-07-26 17:02:59.846  INFO 19164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-26 17:02:59.884  INFO 19164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 17:02:59.885  INFO 19164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 17:02:59.934  WARN 19164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 17:03:00.218  INFO 19164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 17:03:00.225  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-26 17:03:00.228  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 0.671 seconds (JVM running for 19877.354)
+2022-07-26 17:03:00.228  INFO 19164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-26 17:03:00.228  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-26 17:03:50.816  INFO 19164 --- [RMI TCP Connection(263)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-26 17:03:50.825  INFO 19164 --- [RMI TCP Connection(263)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 17:03:50.826  INFO 19164 --- [RMI TCP Connection(263)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown initiated...
+2022-07-26 17:03:50.828  INFO 19164 --- [RMI TCP Connection(263)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown completed.
