@@ -43,10 +43,22 @@ public class EmployeeService {
 	public List<Employee> getEmployeesByFirstName(String firstName) {
 		LOG.info(firstName);
 		List<Employee> empList = empRepository.findByFirstName(firstName);
-		if (!empList.isEmpty() ) {
+		if (!empList.isEmpty()) {
 			return empList;
 		} else {
 			String errorMessage = "Employee with name " + firstName + " not found.";
+			LOG.warn(errorMessage);
+			throw new EmployeeNotFoundException(errorMessage);
+		}
+	}
+
+	public List<Employee> getEmployeesBySalaryGreaterThan(double salary) {
+		LOG.info(Double.toString(salary));
+		List<Employee> empList = empRepository.findBySalaryGreaterThan(salary);
+		if (!empList.isEmpty()) {
+			return empList;
+		} else {
+			String errorMessage = "Employee with salary greater than " + salary + " not found.";
 			LOG.warn(errorMessage);
 			throw new EmployeeNotFoundException(errorMessage);
 		}

@@ -64,6 +64,25 @@ public class EmployeeController {
 //	@GetMapping("/get-emp-by-salary-greater-than/{salary}")
 //	getEmpsBySalaryGreaterThan(@PathVariable(name = "salary") double salary) {
 
+	@RequestMapping(path = "/get-emps-by-first-name/{first-name}", method = RequestMethod.GET)
+	public ResponseEntity<List<Employee>> getEmpsByFirstName(@PathVariable(name = "first-name") String firstName) {
+		List<Employee> empList = empService.getEmployeesByFirstName(firstName);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employees were found successfully.");
+		HttpStatus status = HttpStatus.OK;
+		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empList, headers, status);
+		return response;
+	}
+
+	@RequestMapping(path = "/get-emps-by-salary-greater-than/{salary}", method = RequestMethod.GET)
+	public ResponseEntity<List<Employee>> getEmpsBySalaryGreaterThan(@PathVariable(name = "salary") double salary) {
+		List<Employee> empList = empService.getEmployeesBySalaryGreaterThan(salary);
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employees were found successfully.");
+		HttpStatus status = HttpStatus.OK;
+		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empList, headers, status);
+		return response;
+	}
 
 	// http://localhost:9999/emp/add-emp
 
