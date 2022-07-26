@@ -70,7 +70,7 @@ public class EmployeeController {
 //	http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/update-emp", method = RequestMethod.PUT)
-	public ResponseEntity<Employee> updateEmp(@RequestBody Employee employee) {
+	public ResponseEntity<Employee> updateEmp(@Valid @RequestBody Employee employee) {
 		LOG.info(employee.toString());
 		Employee emp = empService.addEmployee(employee);
 		HttpStatus status = HttpStatus.CREATED;

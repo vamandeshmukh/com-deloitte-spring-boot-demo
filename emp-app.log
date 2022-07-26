@@ -823,3 +823,39 @@
 2022-07-26 11:21:29.496  INFO 19288 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-26 11:21:29.498  INFO 19288 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-26 11:21:29.502  INFO 19288 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-26 11:21:58.674  INFO 7548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 7548 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-26 11:21:58.675  INFO 7548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 11:21:58.719  INFO 7548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 11:21:58.719  INFO 7548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 11:21:59.175  INFO 7548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 11:21:59.203  INFO 7548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2022-07-26 11:21:59.557  INFO 7548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-26 11:21:59.564  INFO 7548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 11:21:59.565  INFO 7548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-26 11:21:59.842  INFO 7548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 11:21:59.842  INFO 7548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1123 ms
+2022-07-26 11:21:59.930  INFO 7548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 11:21:59.958  INFO 7548 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-26 11:22:00.051  INFO 7548 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-26 11:22:00.106  INFO 7548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-26 11:22:00.308  INFO 7548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-26 11:22:00.318  INFO 7548 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-26 11:22:00.704  INFO 7548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 11:22:00.709  INFO 7548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 11:22:00.934  WARN 7548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 11:22:01.432  INFO 7548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 11:22:01.458  INFO 7548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-26 11:22:01.465  INFO 7548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 3.016 seconds (JVM running for 3.769)
+2022-07-26 11:22:01.467  INFO 7548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-26 11:22:11.944  INFO 7548 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 11:22:11.944  INFO 7548 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-26 11:22:11.946  INFO 7548 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-26 11:22:12.561  INFO 7548 --- [http-nio-9999-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 337 ms
+2022-07-26 11:22:30.918  INFO 7548 --- [http-nio-9999-exec-5] c.d.s.b.d.controller.EmployeeController  : Employee [employeeId=0, firstName=abcde, salary=12.0]
+2022-07-26 11:22:30.919  INFO 7548 --- [http-nio-9999-exec-5] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=0, firstName=abcde, salary=12.0]
+2022-07-26 11:22:41.157  WARN 7548 --- [http-nio-9999-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.deloitte.spring.boot.demo.model.Employee> com.deloitte.spring.boot.demo.controller.EmployeeController.addEmp(com.deloitte.spring.boot.demo.model.Employee): [Field error in object 'employee' on field 'firstName': rejected value [ab]; codes [Size.employee.firstName,Size.firstName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName],15,3]; default message [firstName should be minimum 3 and maximum 15 characters.]] ]
+2022-07-26 11:24:08.563  WARN 7548 --- [http-nio-9999-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.deloitte.spring.boot.demo.model.Employee> com.deloitte.spring.boot.demo.controller.EmployeeController.addEmp(com.deloitte.spring.boot.demo.model.Employee): [Field error in object 'employee' on field 'firstName': rejected value [abqqqqqqqqqqqqqqqqqq]; codes [Size.employee.firstName,Size.firstName,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.firstName,firstName]; arguments []; default message [firstName],15,3]; default message [firstName should be minimum 3 and maximum 15 characters.]] ]
+2022-07-26 11:27:05.400  INFO 7548 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-07-26 11:27:05.425  INFO 7548 --- [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 11:27:05.427  INFO 7548 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-26 11:27:05.432  INFO 7548 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
