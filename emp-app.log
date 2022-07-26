@@ -2012,3 +2012,44 @@ com.deloitte.spring.boot.demo.exception.EmployeeNotFoundException: Employee with
 2022-07-26 15:12:05.144  INFO 19164 --- [Thread-167] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown initiated...
 2022-07-26 15:12:05.147  INFO 19164 --- [Thread-167] com.zaxxer.hikari.HikariDataSource       : HikariPool-42 - Shutdown completed.
 2022-07-26 15:12:05.186  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
+2022-07-26 15:12:05.201  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 19164 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-26 15:12:05.202  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 15:12:05.277  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 15:12:05.280  INFO 19164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2022-07-26 15:12:05.318  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-26 15:12:05.318  INFO 19164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 15:12:05.318  INFO 19164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-26 15:12:05.330  INFO 19164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 15:12:05.330  INFO 19164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2022-07-26 15:12:05.346  INFO 19164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 15:12:05.350  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Starting...
+2022-07-26 15:12:05.358  INFO 19164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Start completed.
+2022-07-26 15:12:05.358  INFO 19164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-26 15:12:05.370  INFO 19164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 15:12:05.370  INFO 19164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:12:05.411  WARN 19164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 15:12:05.656  INFO 19164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 15:12:05.662  INFO 19164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-26 15:12:05.665  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 0.476 seconds (JVM running for 13222.791)
+2022-07-26 15:12:05.666  INFO 19164 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-26 15:12:05.666  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-26 15:13:54.793  INFO 19164 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 15:13:54.793  INFO 19164 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-26 15:13:54.794  INFO 19164 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-26 15:14:27.092  INFO 19164 --- [http-nio-9999-exec-9] c.d.s.boot.demo.service.EmployeeService  : getAllEmployees invoked.
+2022-07-26 15:14:49.489  INFO 19164 --- [http-nio-9999-exec-6] c.d.s.boot.demo.service.EmployeeService  : Ponu
+2022-07-26 15:14:55.549  INFO 19164 --- [http-nio-9999-exec-7] c.d.s.boot.demo.service.EmployeeService  : Pav
+2022-07-26 15:15:01.042  INFO 19164 --- [http-nio-9999-exec-5] c.d.s.boot.demo.service.EmployeeService  : Pavan
+2022-07-26 15:15:05.249  INFO 19164 --- [http-nio-9999-exec-8] c.d.s.boot.demo.service.EmployeeService  : a
+2022-07-26 15:15:05.250  WARN 19164 --- [http-nio-9999-exec-8] c.d.s.boot.demo.service.EmployeeService  : Employee with name a not found.
+2022-07-26 15:15:05.252  WARN 19164 --- [http-nio-9999-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.deloitte.spring.boot.demo.exception.EmployeeNotFoundException: Employee with name a not found.]
+2022-07-26 15:15:39.714  INFO 19164 --- [http-nio-9999-exec-10] c.d.s.boot.demo.service.EmployeeService  : 1.0
+2022-07-26 15:15:43.529  INFO 19164 --- [http-nio-9999-exec-1] c.d.s.boot.demo.service.EmployeeService  : 1.1111111E7
+2022-07-26 15:15:43.531  WARN 19164 --- [http-nio-9999-exec-1] c.d.s.boot.demo.service.EmployeeService  : Employee with salary greater than 1.1111111E7 not found.
+2022-07-26 15:15:43.532  WARN 19164 --- [http-nio-9999-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.deloitte.spring.boot.demo.exception.EmployeeNotFoundException: Employee with salary greater than 1.1111111E7 not found.]
+2022-07-26 15:15:49.034  INFO 19164 --- [http-nio-9999-exec-2] c.d.s.boot.demo.service.EmployeeService  : 11111.0
+2022-07-26 15:15:57.111  INFO 19164 --- [http-nio-9999-exec-4] c.d.s.boot.demo.service.EmployeeService  : 90000.0
+2022-07-26 15:22:14.343  INFO 19164 --- [Thread-171] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:22:14.343  INFO 19164 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown initiated...
+2022-07-26 15:22:14.347  INFO 19164 --- [Thread-171] com.zaxxer.hikari.HikariDataSource       : HikariPool-43 - Shutdown completed.
+2022-07-26 15:22:14.394  INFO 19164 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
