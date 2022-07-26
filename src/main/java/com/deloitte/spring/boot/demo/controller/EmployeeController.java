@@ -2,7 +2,12 @@ package com.deloitte.spring.boot.demo.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,26 +25,51 @@ import com.deloitte.spring.boot.demo.service.EmployeeService;
 public class EmployeeController {
 
 	@Autowired
-	EmployeeService empService;
+	private EmployeeService empService;
+	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
 //	http://localhost:9999/emp/get-all-emps
 
+//	@RequestMapping(path = "/get-all-emps", method = RequestMethod.GET)
+//	public ResponseEntity<List<Employee>> getAllEmps() {
+//		HttpHeaders headers = new HttpHeaders();
+//		headers.add("message", "All employees were found successfully.");
+//		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empService.getAllEmployees(), headers, HttpStatus.OK);
+//		return response;
+//	}
+
 //	@GetMapping("/get-all-emps")
 	@RequestMapping(path = "/get-all-emps", method = RequestMethod.GET)
-	public List<Employee> getAllEmps() {
-		System.out.println("get-all-emps");
-		return empService.getAllEmployees();
+	public ResponseEntity<List<Employee>> getAllEmps() {
+		List<Employee> empList = empService.getAllEmployees();
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "All employees were found successfully.");
+		HttpStatus status = HttpStatus.OK;
+		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empList, headers, status);
+		return response;
 	}
 
-//	http://localhost:9999/emp/get-emp-by-id/{eid}
+	// http://localhost:9999/emp/get-emp-by-id/{eid}
+
+//	@GetMapping("/get-emp-by-id/{eid}")
+//	public Employee getEmpById(@PathVariable(name = "eid") int employeeId) {
+//		System.out.println(employeeId);
+//		return empService.getEmployeeById(employeeId);
+//	}
 
 	@GetMapping("/get-emp-by-id/{eid}")
-	public Employee getEmpById(@PathVariable(name = "eid") int employeeId) {
-		System.out.println(employeeId);
-		return empService.getEmployeeById(employeeId);
+	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int employeeId) {
+
+		Employee emp = empService.getEmployeeById(employeeId);
+		HttpStatus status = HttpStatus.OK;
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee with " + employeeId + " is found sussessfully.");
+
+		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
+		return response;
 	}
 
-//	http://localhost:9999/emp/add-emp
+	// http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/add-emp", method = RequestMethod.POST)
 	public Employee addEmp(@RequestBody Employee employee) {

@@ -21,7 +21,7 @@ public class EmployeeService {
 //	user tries to delete non-existing record (employeeId)
 
 	@Autowired
-	EmployeeRepository empRepository;
+	private EmployeeRepository empRepository;
 
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 

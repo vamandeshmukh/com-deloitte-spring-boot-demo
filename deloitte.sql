@@ -44,3 +44,4 @@ INSERT INTO emp_table (employee_id, first_name, salary) VALUES (105, 'Gonu', 990
 
 SELECT * FROM emp_table ORDER BY employee_id;
 
+
