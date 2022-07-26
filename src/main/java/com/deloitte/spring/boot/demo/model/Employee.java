@@ -17,7 +17,7 @@ public class Employee {
 	@Column(name = "employee_id")
 	private int employeeId;
 
-	@Size(min = 3, max = 15, message = "firstName should be min 3 and max 40 characters.")
+	@Size(min = 3, max = 40, message = "firstName should be min 3 and max 40 characters.")
 	@Column(name = "first_name")
 	private String firstName;
 
