@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -17,8 +18,9 @@ public class Employee {
 	@Column(name = "employee_id")
 	private int employeeId;
 
-	@Size(min = 3, max = 40, message = "firstName should be min 3 and max 40 characters.")
 	@Column(name = "first_name")
+	@NotNull(message = "firstName can not be null.")
+	@Size(min = 3, max = 40, message = "firstName should be min 3 and max 40 characters.")
 	private String firstName;
 
 	@Column(name = "salary")
