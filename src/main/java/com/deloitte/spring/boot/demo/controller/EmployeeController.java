@@ -2,6 +2,8 @@ package com.deloitte.spring.boot.demo.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,14 +32,6 @@ public class EmployeeController {
 
 //	http://localhost:9999/emp/get-all-emps
 
-//	@RequestMapping(path = "/get-all-emps", method = RequestMethod.GET)
-//	public ResponseEntity<List<Employee>> getAllEmps() {
-//		HttpHeaders headers = new HttpHeaders();
-//		headers.add("message", "All employees were found successfully.");
-//		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empService.getAllEmployees(), headers, HttpStatus.OK);
-//		return response;
-//	}
-
 //	@GetMapping("/get-all-emps")
 	@RequestMapping(path = "/get-all-emps", method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> getAllEmps() {
@@ -51,7 +45,7 @@ public class EmployeeController {
 
 	@GetMapping("/get-emp-by-id/{eid}")
 	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int employeeId) {
-
+		LOG.info(Integer.toString(employeeId));
 		Employee emp = empService.getEmployeeById(employeeId);
 		HttpStatus status = HttpStatus.OK;
 		HttpHeaders headers = new HttpHeaders();
@@ -63,7 +57,8 @@ public class EmployeeController {
 	// http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/add-emp", method = RequestMethod.POST)
-	public ResponseEntity<Employee> addEmp(@RequestBody Employee employee) {
+	public ResponseEntity<Employee> addEmp(@Valid @RequestBody Employee employee) {
+		LOG.info(employee.toString());
 		Employee emp = empService.addEmployee(employee);
 		HttpStatus status = HttpStatus.CREATED;
 		HttpHeaders headers = new HttpHeaders();
@@ -76,6 +71,7 @@ public class EmployeeController {
 
 	@RequestMapping(path = "/update-emp", method = RequestMethod.PUT)
 	public ResponseEntity<Employee> updateEmp(@RequestBody Employee employee) {
+		LOG.info(employee.toString());
 		Employee emp = empService.addEmployee(employee);
 		HttpStatus status = HttpStatus.CREATED;
 		HttpHeaders headers = new HttpHeaders();
@@ -88,11 +84,11 @@ public class EmployeeController {
 
 	@RequestMapping(path = "/delete-emp/{eid}", method = RequestMethod.DELETE)
 	public ResponseEntity<Employee> deleteEmp(@PathVariable(name = "eid") int employeeId) {
+		LOG.info(Integer.toString(employeeId));
 		Employee emp = empService.deleteEmployee(employeeId);
 		HttpStatus status = HttpStatus.OK;
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("message", "Employee with eid " + employeeId + " was deleted sussessfully.");
-
 		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
 		return response;
 	}

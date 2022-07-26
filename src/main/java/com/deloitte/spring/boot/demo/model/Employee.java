@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "emp_table")
@@ -16,6 +17,7 @@ public class Employee {
 	@Column(name = "employee_id")
 	private int employeeId;
 
+	@Size(min = 3, max = 15, message = "firstName should be minimum 3 and maximum 15 characters.")
 	@Column(name = "first_name")
 	private String firstName;
 
