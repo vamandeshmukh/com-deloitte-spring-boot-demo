@@ -83,7 +83,7 @@ public class EmployeeController {
 	@RequestMapping(path = "/update-emp", method = RequestMethod.PUT)
 	public ResponseEntity<Employee> updateEmp(@Valid @RequestBody Employee employee) {
 		LOG.info(employee.toString());
-		Employee emp = empService.addEmployee(employee);
+		Employee emp = empService.updateEmployee(employee);
 		HttpStatus status = HttpStatus.CREATED;
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("message", "Employee with eid " + emp.getEmployeeId() + " was updated sussessfully.");

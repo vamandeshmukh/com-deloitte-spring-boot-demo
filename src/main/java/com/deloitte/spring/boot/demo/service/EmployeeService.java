@@ -33,7 +33,20 @@ public class EmployeeService {
 			LOG.info(emp.toString());
 			return emp;
 		} else {
+
 			String errorMessage = "Employee with eid " + employeeId + " not found.";
+			LOG.warn(errorMessage);
+			throw new EmployeeNotFoundException(errorMessage);
+		}
+	}
+
+	public List<Employee> getEmployeesByFirstName(String firstName) {
+		LOG.info(firstName);
+		List<Employee> empList = empRepository.findByFirstName(firstName);
+		if (!empList.isEmpty() ) {
+			return empList;
+		} else {
+			String errorMessage = "Employee with name " + firstName + " not found.";
 			LOG.warn(errorMessage);
 			throw new EmployeeNotFoundException(errorMessage);
 		}
