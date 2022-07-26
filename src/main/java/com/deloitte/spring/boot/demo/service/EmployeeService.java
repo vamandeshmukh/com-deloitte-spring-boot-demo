@@ -21,22 +21,22 @@ public class EmployeeService {
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
 	public List<Employee> getAllEmployees() {
+		LOG.info("getAllEmployees invoked.");
 		return empRepository.findAll();
 	}
 
 	public Employee getEmployeeById(int employeeId) {
 		LOG.info(Integer.toString(employeeId));
-
 		Optional<Employee> empOptional = empRepository.findById(employeeId);
-
 		if (empOptional.isPresent()) {
-			return empOptional.get();
+			Employee emp = empOptional.get();
+			LOG.info(emp.toString());
+			return emp;
 		} else {
 			String errorMessage = "Employee with eid " + employeeId + " not found.";
 			LOG.warn(errorMessage);
 			throw new EmployeeNotFoundException(errorMessage);
 		}
-
 	}
 
 	public Employee addEmployee(Employee employee) {
@@ -46,18 +46,14 @@ public class EmployeeService {
 
 	public Employee updateEmployee(Employee employee) {
 		LOG.info(employee.toString());
-		if (empRepository.existsById(employee.getEmployeeId()))
-			return empRepository.save(employee);
-		else
-			return null;
+		Employee emp = this.getEmployeeById(employee.getEmployeeId());
+		emp = empRepository.save(employee);
+		return emp;
 	}
 
 	public Employee deleteEmployee(int employeeId) {
 		LOG.info(Integer.toString(employeeId));
-		Employee emp = this.getEmployeeById(employeeId);
-		if (null != emp)
-			empRepository.deleteById(employeeId);
-		return emp;
+		return this.getEmployeeById(employeeId);
 	}
 }
 

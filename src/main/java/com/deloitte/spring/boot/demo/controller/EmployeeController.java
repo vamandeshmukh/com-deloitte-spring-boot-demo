@@ -43,6 +43,8 @@ public class EmployeeController {
 		return response;
 	}
 
+//	http://localhost:9999/emp/get-emp-by-id/{eid}
+
 	@GetMapping("/get-emp-by-id/{eid}")
 	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int employeeId) {
 		LOG.info(Integer.toString(employeeId));
@@ -53,6 +55,14 @@ public class EmployeeController {
 		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
 		return response;
 	}
+
+////	Create these two functionalities 
+//	
+//	@GetMapping("/get-emp-by-name/{first-name}")
+//	getEmpsByFirstName(@PathVariable(name = "first-name") String firstName) {
+//
+//	@GetMapping("/get-emp-by-salary-greater-than/{salary}")
+//	getEmpsBySalaryGreaterThan(@PathVariable(name = "salary") double salary) {
 
 	// http://localhost:9999/emp/add-emp
 
