@@ -49,22 +49,13 @@ public class EmployeeController {
 		return response;
 	}
 
-	// http://localhost:9999/emp/get-emp-by-id/{eid}
-
-//	@GetMapping("/get-emp-by-id/{eid}")
-//	public Employee getEmpById(@PathVariable(name = "eid") int employeeId) {
-//		System.out.println(employeeId);
-//		return empService.getEmployeeById(employeeId);
-//	}
-
 	@GetMapping("/get-emp-by-id/{eid}")
 	public ResponseEntity<Employee> getEmpById(@PathVariable(name = "eid") int employeeId) {
 
 		Employee emp = empService.getEmployeeById(employeeId);
 		HttpStatus status = HttpStatus.OK;
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("message", "Employee with " + employeeId + " is found sussessfully.");
-
+		headers.add("message", "Employee with eid " + employeeId + " was found sussessfully.");
 		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
 		return response;
 	}
@@ -72,22 +63,38 @@ public class EmployeeController {
 	// http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/add-emp", method = RequestMethod.POST)
-	public Employee addEmp(@RequestBody Employee employee) {
-		return empService.addEmployee(employee);
+	public ResponseEntity<Employee> addEmp(@RequestBody Employee employee) {
+		Employee emp = empService.addEmployee(employee);
+		HttpStatus status = HttpStatus.CREATED;
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee with eid " + emp.getEmployeeId() + " was added sussessfully.");
+		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
+		return response;
 	}
 
 //	http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/update-emp", method = RequestMethod.PUT)
-	public Employee updateEmp(@RequestBody Employee employee) {
-		return empService.updateEmployee(employee);
+	public ResponseEntity<Employee> updateEmp(@RequestBody Employee employee) {
+		Employee emp = empService.addEmployee(employee);
+		HttpStatus status = HttpStatus.CREATED;
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee with eid " + emp.getEmployeeId() + " was updated sussessfully.");
+		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
+		return response;
 	}
 
 //	http://localhost:9999/emp/delete-emp/{eid}
 
 	@RequestMapping(path = "/delete-emp/{eid}", method = RequestMethod.DELETE)
-	public Employee deleteEmp(@PathVariable(name = "eid") int employeeId) {
-		return empService.deleteEmployee(employeeId);
+	public ResponseEntity<Employee> deleteEmp(@PathVariable(name = "eid") int employeeId) {
+		Employee emp = empService.deleteEmployee(employeeId);
+		HttpStatus status = HttpStatus.OK;
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee with eid " + employeeId + " was deleted sussessfully.");
+
+		ResponseEntity<Employee> response = new ResponseEntity<>(emp, headers, status);
+		return response;
 	}
 
 }
