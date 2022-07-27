@@ -67,6 +67,18 @@ public class EmployeeService {
 		}
 	}
 
+	public List<Employee> getEmployeesByCity(String city) {
+		LOG.info(city);
+		List<Employee> empList = empRepository.findByDepartment_City(city);
+		if (!empList.isEmpty()) {
+			return empList;
+		} else {
+			String errorMessage = "Employee with city " + city + " not found.";
+			LOG.warn(errorMessage);
+			throw new EmployeeNotFoundException(errorMessage);
+		}
+	}
+
 	public Employee addEmployee(Employee employee) {
 		LOG.info(employee.toString());
 		if (null != employee.getDepartment())

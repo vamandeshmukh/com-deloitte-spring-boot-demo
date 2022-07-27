@@ -84,6 +84,17 @@ public class EmployeeController {
 		return response;
 	}
 
+	@GetMapping("/get-emps-by-city/{city}")
+	public ResponseEntity<List<Employee>> getEmpsByCity(@PathVariable(name = "city") String city) {
+		LOG.info(city);
+		List<Employee> empList = empService.getEmployeesByCity(city);
+		HttpStatus status = HttpStatus.OK;
+		HttpHeaders headers = new HttpHeaders();
+		headers.add("message", "Employee with city " + city + " was found sussessfully.");
+		ResponseEntity<List<Employee>> response = new ResponseEntity<>(empList, headers, status);
+		return response;
+	}
+
 	// http://localhost:9999/emp/add-emp
 
 	@RequestMapping(path = "/add-emp", method = RequestMethod.POST)
