@@ -974,3 +974,45 @@ com.deloitte.spring.boot.demo.exception.DepartmentNotFoundException: Department 
 2022-07-27 11:31:03.525  INFO 18224 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-27 11:31:03.527  INFO 18224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-27 11:31:03.537  INFO 18224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-27 12:05:20.579  INFO 5548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 5548 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-27 12:05:20.580  INFO 5548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-27 12:05:20.611  INFO 5548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-27 12:05:20.611  INFO 5548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-27 12:05:21.031  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 12:05:21.060  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2022-07-27 12:05:21.394  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-27 12:05:21.401  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-27 12:05:21.402  INFO 5548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-27 12:05:21.633  INFO 5548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-27 12:05:21.633  INFO 5548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2022-07-27 12:05:21.714  INFO 5548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-27 12:05:21.737  INFO 5548 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-27 12:05:21.819  INFO 5548 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-27 12:05:21.870  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-27 12:05:22.089  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-27 12:05:22.098  INFO 5548 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-27 12:05:22.540  INFO 5548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-27 12:05:22.551  INFO 5548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 12:05:22.802  WARN 5548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 12:05:23.271  INFO 5548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-27 12:05:23.301  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-27 12:05:23.307  INFO 5548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 2.943 seconds (JVM running for 3.645)
+2022-07-27 12:05:23.309  INFO 5548 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-27 12:05:38.457  INFO 5548 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 12:05:38.457  INFO 5548 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-27 12:05:38.457  INFO 5548 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-27 12:05:38.715  INFO 5548 --- [http-nio-9999-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 167 ms
+2022-07-27 12:05:50.621  INFO 5548 --- [http-nio-9999-exec-4] c.d.s.boot.demo.service.EmployeeService  : getAllEmployees invoked.
+2022-07-27 12:09:28.380  INFO 5548 --- [http-nio-9999-exec-3] c.d.s.b.d.controller.EmployeeController  : Employee [employeeId=0, firstName=Sandy, salary=213480.0, role=ADMIN, department=Department [departmentId=2, departmentName=null, city=null]]
+2022-07-27 12:09:28.380  INFO 5548 --- [http-nio-9999-exec-3] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=0, firstName=Sandy, salary=213480.0, role=ADMIN, department=Department [departmentId=2, departmentName=null, city=null]]
+2022-07-27 12:09:51.477  INFO 5548 --- [http-nio-9999-exec-8] c.d.s.b.d.controller.EmployeeController  : 107
+2022-07-27 12:09:51.477  INFO 5548 --- [http-nio-9999-exec-8] c.d.s.boot.demo.service.EmployeeService  : 107
+2022-07-27 12:09:51.500  INFO 5548 --- [http-nio-9999-exec-8] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=107, firstName=Sandy, salary=213480.0, role=ADMIN, department=Department [departmentId=2, departmentName=Development, city=Hyderabad]]
+2022-07-27 12:11:38.134  INFO 5548 --- [http-nio-9999-exec-2] c.d.s.b.d.controller.EmployeeController  : Employee [employeeId=0, firstName=Jax, salary=9876654.0, role=ADMIN, department=null]
+2022-07-27 12:11:38.135  INFO 5548 --- [http-nio-9999-exec-2] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=0, firstName=Jax, salary=9876654.0, role=ADMIN, department=null]
+2022-07-27 12:11:54.055  INFO 5548 --- [http-nio-9999-exec-4] c.d.s.b.d.controller.EmployeeController  : 108
+2022-07-27 12:11:54.055  INFO 5548 --- [http-nio-9999-exec-4] c.d.s.boot.demo.service.EmployeeService  : 108
+2022-07-27 12:11:54.063  INFO 5548 --- [http-nio-9999-exec-4] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=108, firstName=Jax, salary=9876654.0, role=ADMIN, department=null]
+2022-07-27 12:13:04.743  INFO 5548 --- [http-nio-9999-exec-7] c.d.s.b.d.controller.EmployeeController  : Employee [employeeId=0, firstName=Rahul, salary=989898.0, role=USER, department=Department [departmentId=3, departmentName=null, city=null]]
+2022-07-27 12:13:04.743  INFO 5548 --- [http-nio-9999-exec-7] c.d.s.boot.demo.service.EmployeeService  : Employee [employeeId=0, firstName=Rahul, salary=989898.0, role=USER, department=Department [departmentId=3, departmentName=null, city=null]]
+2022-07-27 12:13:27.959  WARN 5548 --- [http-nio-9999-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.deloitte.spring.boot.demo.model.Role` from String "OTHER": not one of the values accepted for Enum class: [USER, MANAGER, EMPLOYEE, ADMIN]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.deloitte.spring.boot.demo.model.Role` from String "OTHER": not one of the values accepted for Enum class: [USER, MANAGER, EMPLOYEE, ADMIN]<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 11] (through reference chain: com.deloitte.spring.boot.demo.model.Employee["role"])]
