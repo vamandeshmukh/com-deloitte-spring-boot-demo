@@ -78,7 +78,10 @@ public class EmployeeService {
 
 	public Employee deleteEmployee(int employeeId) {
 		LOG.info(Integer.toString(employeeId));
-		return this.getEmployeeById(employeeId);
+		Employee emp = this.getEmployeeById(employeeId);
+		if (null != emp)
+			empRepository.deleteById(employeeId);
+		return emp;
 	}
 }
 

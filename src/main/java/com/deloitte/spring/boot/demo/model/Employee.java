@@ -9,12 +9,15 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name = "emp_table")
 public class Employee {
 
 	@Id // PK
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GenericGenerator(name = "emp_seq", strategy = "increment")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "emp_seq")
 	@Column(name = "employee_id")
 	private int employeeId;
 
