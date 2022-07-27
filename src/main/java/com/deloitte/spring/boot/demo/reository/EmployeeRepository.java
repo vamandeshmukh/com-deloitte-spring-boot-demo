@@ -3,6 +3,7 @@ package com.deloitte.spring.boot.demo.reository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.deloitte.spring.boot.demo.model.Department;
@@ -22,6 +23,10 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
 	public abstract List<Employee> findByDepartment_City(String city);
 
+//	@Query("SELECT * FROM Employee e WHERE e.salary = ?1") // JPQL 
+//	public abstract List<Employee> findBySalary(double salary);
+
+	
 	// repository provides methods for basic CRUD operations -
 	// INSERT - save();
 	// UPDATE - save();
