@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -29,8 +31,11 @@ public class Employee {
 	@Column(name = "salary")
 	private double salary;
 
+	@Column(name = "role")
 	private Role role;
 
+	@ManyToOne
+	@JoinColumn(name = "departmentId")
 	private Department department;
 
 	public Employee() {
