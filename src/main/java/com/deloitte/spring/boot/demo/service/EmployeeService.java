@@ -18,6 +18,9 @@ public class EmployeeService {
 	@Autowired
 	private EmployeeRepository empRepository;
 
+	@Autowired
+	private DepartmentService depService;
+
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
 	public List<Employee> getAllEmployees() {
@@ -66,11 +69,15 @@ public class EmployeeService {
 
 	public Employee addEmployee(Employee employee) {
 		LOG.info(employee.toString());
+		if (null != employee.getDepartment())
+			depService.getDepartmentById(employee.getDepartment().getDepartmentId());
 		return empRepository.save(employee);
 	}
 
 	public Employee updateEmployee(Employee employee) {
 		LOG.info(employee.toString());
+		if (null != employee.getDepartment())
+			depService.getDepartmentById(employee.getDepartment().getDepartmentId());
 		Employee emp = this.getEmployeeById(employee.getEmployeeId());
 		emp = empRepository.save(employee);
 		return emp;
