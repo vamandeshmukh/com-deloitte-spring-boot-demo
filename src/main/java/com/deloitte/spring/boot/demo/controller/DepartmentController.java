@@ -50,7 +50,7 @@ public class DepartmentController {
 	public ResponseEntity<List<Department>> getAllDeptsByDepartmentName(
 			@PathVariable(name = "name") String departmentName) {
 		System.out.println("get-all-depts-by-name");
-		List<Department> deptList = deptService.getAllDepartmentsByDepartmentName(departmentName);
+		List<Department> deptList = deptService.getDepartmentsByDepartmentName(departmentName);
 		HttpStatus status = HttpStatus.OK;
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("message", "Department with department name " + departmentName + " is found successfully!");
@@ -61,7 +61,7 @@ public class DepartmentController {
 	@RequestMapping(path = "/get-dept-by-city/{city}", method = RequestMethod.GET)
 	public ResponseEntity<List<Department>> getAllDeptsByCity(@PathVariable(name = "city") String city) {
 		System.out.println("get-all-depts-by-city");
-		List<Department> deptList = deptService.getAllDepartmentsByCity(city);
+		List<Department> deptList = deptService.getDepartmentsByCity(city);
 		HttpStatus status = HttpStatus.OK;
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("message", "Department with id " + city + " is found successfully!");

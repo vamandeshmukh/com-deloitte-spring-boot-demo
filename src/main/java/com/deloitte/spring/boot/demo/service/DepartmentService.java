@@ -36,7 +36,7 @@ public class DepartmentService {
 		}
 	}
 
-	public List<Department> getAllDepartmentsByDepartmentName(String departmentName) {
+	public List<Department> getDepartmentsByDepartmentName(String departmentName) {
 		LOG.info(departmentName);
 		List<Department> deptList = deptRepository.findByDepartmentName(departmentName);
 		if (!deptList.isEmpty()) {
@@ -48,7 +48,7 @@ public class DepartmentService {
 		}
 	}
 
-	public List<Department> getAllDepartmentsByCity(String city) {
+	public List<Department> getDepartmentsByCity(String city) {
 		LOG.info(city);
 		List<Department> deptList = deptRepository.findByCity(city);
 		if (!deptList.isEmpty()) {
