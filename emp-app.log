@@ -2126,3 +2126,7 @@ Unconditional classes:
 2022-07-27 16:42:24.493  INFO 21056 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-07-27 16:42:24.493  INFO 21056 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-07-27 16:42:24.495  INFO 21056 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-27 16:45:30.703  INFO 21056 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:45:30.704  INFO 21056 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-27 16:45:30.709  INFO 21056 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-27 16:45:30.743  INFO 21056 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
