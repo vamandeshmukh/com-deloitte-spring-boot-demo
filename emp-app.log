@@ -214,3 +214,77 @@ This generated password is for development use only. Your security configuration
 2022-07-28 10:23:29.289  INFO 9420 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-28 10:23:29.289  INFO 9420 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2022-07-28 10:23:29.293  INFO 9420 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-28 10:23:50.481  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 23896 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-28 10:23:50.483  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 10:23:50.517  INFO 23896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-28 10:23:50.518  INFO 23896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-28 10:23:51.055  INFO 23896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-28 10:23:51.084  INFO 23896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2022-07-28 10:23:51.417  INFO 23896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-28 10:23:51.421  INFO 23896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-28 10:23:51.422  INFO 23896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-28 10:23:51.701  INFO 23896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-28 10:23:51.701  INFO 23896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1182 ms
+2022-07-28 10:23:51.838  INFO 23896 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-28 10:23:51.864  INFO 23896 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-28 10:23:51.949  INFO 23896 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-28 10:23:52.001  INFO 23896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-28 10:23:52.179  INFO 23896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-28 10:23:52.188  INFO 23896 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-28 10:23:52.557  INFO 23896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-28 10:23:52.562  INFO 23896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 10:23:52.794  WARN 23896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-28 10:23:53.349  WARN 23896 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d2181a26-d310-4584-9a13-4ba208a6b291
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-28 10:23:53.407  INFO 23896 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-28 10:23:53.417  INFO 23896 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@579d1fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@66678b11, org.springframework.security.web.header.HeaderWriterFilter@672578b6, org.springframework.web.filter.CorsFilter@467e5d8, org.springframework.security.web.csrf.CsrfFilter@8c5bd4, org.springframework.security.web.authentication.logout.LogoutFilter@651911ac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3856214d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6590a89a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ae5678c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@66cb0ee6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c4a7f85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b4700ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@114f70a2, org.springframework.security.web.session.SessionManagementFilter@5d2e6827, org.springframework.security.web.access.ExceptionTranslationFilter@1b8606f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a6e67c3]
+2022-07-28 10:23:53.449  INFO 23896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-28 10:23:53.479  INFO 23896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-28 10:23:53.488  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 3.215 seconds (JVM running for 3.935)
+2022-07-28 10:23:53.494  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-28 10:23:56.046  INFO 23896 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-28 10:23:56.046  INFO 23896 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-28 10:23:56.047  INFO 23896 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-28 10:24:47.253  INFO 23896 --- [http-nio-9999-exec-7] c.d.s.boot.demo.service.EmployeeService  : getAllEmployees invoked.
+2022-07-28 10:24:57.397  INFO 23896 --- [http-nio-9999-exec-6] c.d.s.boot.demo.service.EmployeeService  : sona
+2022-07-28 10:28:21.922  INFO 23896 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 10:28:21.924  INFO 23896 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-28 10:28:21.929  INFO 23896 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-28 10:28:21.965  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
+2022-07-28 10:28:21.984  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting App using Java 17.0.3 on VAMUX with PID 23896 (D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_2022\com-deloitte-spring-boot-demo)
+2022-07-28 10:28:21.984  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 10:28:22.118  INFO 23896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-28 10:28:22.123  INFO 23896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2022-07-28 10:28:22.177  INFO 23896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2022-07-28 10:28:22.177  INFO 23896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-28 10:28:22.177  INFO 23896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-07-28 10:28:22.188  INFO 23896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-28 10:28:22.188  INFO 23896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2022-07-28 10:28:22.221  INFO 23896 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-28 10:28:22.223  INFO 23896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-28 10:28:22.234  INFO 23896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-28 10:28:22.234  INFO 23896 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-28 10:28:22.265  INFO 23896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-28 10:28:22.266  INFO 23896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 10:28:22.325  WARN 23896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-28 10:28:22.616  WARN 23896 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3938b1f2-05d7-4c58-bae3-3506f5dd4514
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-07-28 10:28:22.623  INFO 23896 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-28 10:28:22.627  INFO 23896 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@324add71, org.springframework.security.web.context.SecurityContextPersistenceFilter@63a8d160, org.springframework.security.web.header.HeaderWriterFilter@22316c19, org.springframework.web.filter.CorsFilter@1e657423, org.springframework.security.web.csrf.CsrfFilter@565e7cbc, org.springframework.security.web.authentication.logout.LogoutFilter@49e539b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57469c9f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@21edf066, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d24a114, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f079b76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79268cbc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50de6625, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ebb59ed, org.springframework.security.web.session.SessionManagementFilter@4636ee86, org.springframework.security.web.access.ExceptionTranslationFilter@633f357c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@626c3485]
+2022-07-28 10:28:22.635  INFO 23896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-28 10:28:22.644  INFO 23896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2022-07-28 10:28:22.648  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started App in 0.68 seconds (JVM running for 273.095)
+2022-07-28 10:28:22.650  INFO 23896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-28 10:28:22.650  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Started deloitte app...
+2022-07-28 10:31:12.659  INFO 23896 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-28 10:31:12.660  INFO 23896 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-28 10:31:12.663  INFO 23896 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-28 10:31:12.696  INFO 23896 --- [restartedMain] com.deloitte.spring.boot.demo.App        : Starting deloitte app...
