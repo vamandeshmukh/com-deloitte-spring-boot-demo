@@ -15,6 +15,7 @@
 	<artifactId>com-deloitte-spring-boot-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>com-deloitte-spring-boot-demo</name>
+	<packaging>jar</packaging>
 	<description>Spring boot demo project for Deloitte trainees July 2022</description>
 
 	<properties>
